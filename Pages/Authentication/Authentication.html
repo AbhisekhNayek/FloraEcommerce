@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://flora-ui.netlify.app/src/app.css">
+    <link rel="stylesheet" href="./Authentication.css">
+    <title>FloraShop | Login</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="nav-container align-center">
+        <div class="p2 nav-logo flex-r">
+            <i class="app-icon fab fa-pagelines"></i>
+            <span class="app-name">FloraShop</span>
+        </div>
+
+        <div class="nav-link">
+            <a href="#"><button class="btn btn-link nav-btn">Home</button></a>
+            <a href="#"><button class="btn btn-link nav-btn">About Us</button></a>
+
+            <div class="dropdown">
+                <button class="btn btn-link nav-btn dropbtn">Plants</button>
+                <div class="dropdown-content">
+                    <a href="#">Indoor Plants</a>
+                    <a href="#">Flowering Plants</a>
+                    <a href="#">Low Maintenance Plants</a>
+                    <a href="#">Air Purifying Plants</a>
+                    <a href="#">Low Light Plants</a>
+                    <a href="#">Cacti and Succulents</a>
+                    <a href="#">Hanging Plants</a>
+                    <a href="#">Medicinal & Aromatic Plants</a>
+                    <a href="#">Pet-Friendly Plants</a>
+                    <a href="#">Fruit Plant</a>
+                    <a href="#">Bundles</a>
+                    <a href="#">New Arrivals</a>
+                    <a href="#">Shop by Location</a>
+                    <a href="#">Subscriptions</a>
+                    <a href="#">Shop by Name</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn btn-link nav-btn dropbtn">Seeds</button>
+                <div class="dropdown-content">
+                    <a href="#">Flower Seeds</a>
+                    <a href="#">Vegetable Seeds</a>
+                    <a href="#">Microgreen Seeds</a>
+                    <a href="#">Herb Seeds</a>
+                    <a href="#">Flower Bulbs</a>
+                    <a href="#">Fruit Seeds</a>
+                    <a href="#">Tree & Grass Seeds</a>
+                    <a href="#">Seeds Kits</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn btn-link nav-btn dropbtn">Pots & Planters</button>
+                <div class="dropdown-content">
+                    <a href="#">Plastic Pots</a>
+                    <a href="#">Ceramic Pots</a>
+                    <a href="#">Metal Planters</a>
+                    <a href="#">Wooden Planters</a>
+                    <a href="#">Hanging Planters</a>
+                    <a href="#">Plant Stands</a>
+                    <a href="#">Seedling Trays</a>
+                    <a href="#">The Razor Collection</a>
+                    <a href="#">Basket Planters</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn btn-link nav-btn dropbtn">Plant Care</button>
+                <div class="dropdown-content">
+                    <a href="#">Potting Mix & Fertilizers</a>
+                    <a href="#">Garden Tools</a>
+                    <a href="#">Watering Tools and Accessories</a>
+                    <a href="#">Garden Decor & Accessories</a>
+                    <a href="#">Pest Control</a>
+                    <a href="#">Video Consultation - Doctor Green</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn btn-link nav-btn dropbtn">Gifting</button>
+                <div class="dropdown-content">
+                    <a href="#">Environment Day Gifting</a>
+                    <a href="#">Corporate/Bulk Gifting</a>
+                    <a href="#">Personalized Gifting</a>
+                    <a href="#">Gift Cards</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn btn-link nav-btn dropbtn">Handcrafting</button>
+                <div class="dropdown-content">
+                    <a href="#">Wooden</a>
+                    <a href="#">Leaf</a>
+                    <a href="#">Soil</a>
+                    <a href="#">Plastics</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="search-input input-container">
+            <input class="input-icon-field input-field" type="text" placeholder="Search">
+            <i class="input-icon fas fa-search"></i>
+        </div>
+
+        <div class="flex-r nav-icons">
+            <div class="flex-c center">
+                <div class="m1 badge-container">
+                    <a href="#"><i class="nav-icon badge-icon fas fa-user"></i></a>
+                </div>
+                <span class="nav-icon-text">Account</span>
+            </div>
+
+            <div class="flex-c center">
+                <div class="m1 badge-container">
+                    <a href="#"><i class="nav-icon badge-icon far fa-heart"></i></a>
+                    <span class="badge badge-right badge-sm">1</span>
+                </div>
+                <span class="nav-icon-text">Wishlist</span>
+            </div>
+
+            <div class="flex-c center">
+                <div class="m1 badge-container">
+                    <a href="#"><i class="nav-icon badge-icon fas fa-shopping-cart"></i></a>
+                    <span class="badge badge-right badge-sm">1</span>
+                </div>
+                <span class="nav-icon-text">Cart</span>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="auth-section">
+    <section class="login-section">
+        <form class="form form-auth">
+            <div class="auth-heading">
+                <h3>Login</h3>
+                <img class="responsive-img auth-img" src="../../assets/images/authentication.svg" alt="authentication">
+            </div>
+    
+            <div class="input-auth input-container">
+                <label class="input-label" for="email">Email</label>
+                <input class="input-field auth-field" type="email" id="email" placeholder="Enter your email here">
+            </div>
+
+            <div class="input-auth input-container">
+                <label class="input-label" for="password">Password</label>
+                <input class="input-field auth-field" type="password" id="password" placeholder="*******">
+            </div>
+
+            <div class="auth-footer">
+            <button class="btn-auth btn btn-secondary">Login</button>
+            <button class="btn-auth btn btn-secondary-outline">Login as guest</button>
+            <span class="auth-span">Not a user yet?</span> <button type="button" class="auth-link link-sign-up btn btn-link-underline">Create Account</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="sign-up-section hide">
+        <form class="form form-auth">
+            <div class="auth-heading">
+                <h3>Sign-up</h3>
+                <img class="responsive-img auth-img" src="../../assets/images/authentication.svg" alt="authentication">
+            </div>
+
+            <div class="input-auth input-container">
+                <label class="input-label" for="username">Username</label>
+                <input class="input-field auth-field" type="text" id="username" placeholder="Username">
+            </div>
+
+            <div class="input-auth input-container">
+                <label class="input-label" for="signup-email">Email</label>
+                <input class="input-field auth-field" type="email" id="signup-email" placeholder="Enter your email here">
+            </div>
+
+            <div class="input-auth input-container">
+                <label class="input-label" for="signup-password">Password</label>
+                <input class="input-field auth-field" type="password" id="signup-password" placeholder="*******">
+            </div>
+
+            <div class="checkbox align-center">
+                <input class="checkbox-input" type="checkbox"> 
+                <label class="checkbox-label">I accept all terms and conditions.</label>
+            </div>
+
+            <div>
+            <button class="btn-auth btn btn-secondary">Create an Account</button>
+            <span class="auth-span">Already registered? </span><button type="button" class="auth-link link-login btn btn-link-underline">Login here</button>
+            </div>
+        </form>
+    </section>
+    </main>
+
+    <footer class="footer">
+        <div>© copyright 2024 Flora UI</div>
+    </footer>
+
+    <script src="./Authentication.js"></script>
+</body>
+</html>
